@@ -1,7 +1,7 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
+from pydantic import BaseModel
 import pandas as pd
 import os
-
 
 # Definir la ruta del archivo CSV
 file_path = os.path.join(os.path.dirname(__file__), 'TotalPeliculasDia.csv')
